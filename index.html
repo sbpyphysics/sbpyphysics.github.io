@@ -4,7 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sayan Bhattacharya | Physics Student</title>
+
+<!-- Jekyll Theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pages-themes/minimal@latest/assets/css/style.css">
+
+<!-- MathJax -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 <style>
+/* Custom Styles (Overrides Jekyll Minimal) */
+
 /* FONTS & COLORS */
 body {
     font-family: "Times New Roman", Times, serif;
@@ -75,56 +86,31 @@ h2 {
     padding-bottom: 0.3rem;
 }
 
-/* PROJECT CARDS */
-.project-list {
+/* GRID LISTS */
+.project-list, .resources-list, .others-list, .assignments-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     list-style: none;
     padding: 0;
 }
-.project-list li {
+.project-list li, .resources-list li, .others-list li, .assignments-list li {
     background: #cce0ff;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.project-list li:hover {
+.project-list li:hover, .resources-list li:hover, .others-list li:hover, .assignments-list li:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
-.project-list li strong {
-    display: block;
-    margin-bottom: 0.6rem;
-    color: #001f4d;
-}
-
-/* RESOURCES & DOWNLOADS */
-.resources-list {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.2rem;
-}
-.resources-list li {
-    background: #cce0ff;
-    padding: 1.2rem 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.resources-list li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-.resources-list a {
+.resources-list a, .others-list a, .assignments-list a {
     text-decoration: none;
     color: #001f4d;
     font-weight: bold;
 }
-.resources-list a:hover {
+.resources-list a:hover, .others-list a:hover, .assignments-list a:hover {
     text-decoration: underline;
 }
 
@@ -167,13 +153,17 @@ footer {
     <p>Physics Student | Research & Computational Enthusiast</p>
     <p>B.sc - B.K.C College | M.Sc - A.P.C College (Affiliated to WBSU) | Intern at S. N. Bose National Centre for Basic Sciences</p>
     <p class="quote">"Physics is like sex: sure, it may give some practical results, but that's not why we do it." – Richard Feynman</p>
+        <!-- Schrödinger Equation -->
+    <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #ffd700;">
+       The equation which changed the world \[\hat{H}\Psi = i\hbar \frac{\partial \Psi}{\partial t}\] 
+    </div>
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#resources">Resources</a>
+        <a href="#others">Others</a>
+        <a href="#assignments">Assignments</a>
         <a href="#contact">Contact</a>
-        <a href="#contact">Others</a>
-        <a href="#contact">assignments</a>
     </nav>
 </header>
 
@@ -246,71 +236,38 @@ footer {
     </ul>
 </section>
 
-
 <section id="others">
     <h2>Others</h2>
     <ul class="others-list">
-
-    <!-- Button -->
-    <li>
-    <div style="text-align:center; margin-bottom:1rem;">
-        <button style="background:#001f4d; color:white; padding:12px 24px; font-size:1rem; border:none; border-radius:8px; cursor:pointer; transition:0.3s;">
-            Syllabuses
-        </button>
-    </div>
-    </li>
-
-        <div style="text-align:center;">
-        <a href="https://github.com/sbpyphysics/sbpyphysics.github.io/raw/main/Apc_Msc.pdf" 
-           download="APC_MSc_Syllabus"
-           style="display:block; margin-bottom:0.8rem; font-weight:bold; color:#001f4d; text-decoration:none;">
-           Download APC College MSc Syllabus
-        </a>
-        <a href="https://github.com/sbpyphysics/sbpyphysics.github.io/raw/main/PH_2026.pdf" 
-           download="GATE_Physics_Syllabus"
-           style="display:block; font-weight:bold; color:#001f4d; text-decoration:none;">
-           Download GATE Physics Syllabus
-        </a>
-    </div>
-
-     <!-- Button -->
-    <li>
-    <div style="text-align:center; margin-bottom:1rem;">
-        <button style="background:#001f4d; color:white; padding:12px 24px; font-size:1rem; border:none; border-radius:8px; cursor:pointer; transition:0.3s;">
-            Test Projects
-        </button>
-    </li>
-    </div>
-      <div style="text-align:center;">
-        <a href="https://github.com/sbpyphysics/Project-Work"target="_blank"
-        style="display:block; margin-bottom:0.8rem; font-weight:bold; color:#001f4d; text-decoration:none;">
-           test files of Project Work
-        </a>
-
-   
-
+        <li>
+            <a href="https://github.com/sbpyphysics/sbpyphysics.github.io/raw/main/Apc_Msc.pdf" download="APC_MSc_Syllabus">
+                <strong>Download APC College MSc Syllabus</strong>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/sbpyphysics/sbpyphysics.github.io/raw/main/PH_2026.pdf" download="GATE_Physics_Syllabus">
+                <strong>Download GATE Physics Syllabus</strong>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/sbpyphysics/Project-Work" target="_blank">
+                <strong>Test files of Project Work</strong>
+            </a>
+        </li>
     </ul>
 </section>
+
 <section id="assignments">
     <h2>Assignments</h2>
-
-    <!-- Button -->
-    <div style="text-align:center; margin-bottom:1rem;">
-        <button style="background:#001f4d; color:white; padding:12px 24px; font-size:1rem; border:none; border-radius:8px; cursor:pointer; transition:0.3s;">
-            
-           GATE Assignments
-           </a>
-        </button>
-    </div>
-    <div style="text-align:center;">
-        <a href="assignments.html"target = "_blank"
-            style="display:block; margin-bottom:0.8rem; font-weight:bold; color:#001f4d; text-decoration:none;">
-                
-            GATE Assignments
-                
+    <ul class="assignments-list">
+        <li>
+            <a href="assignments.html" target="_blank">
+                <strong>GATE Assignments</strong>
             </a>
-    </div>
-  
+        </li>
+    </ul>
+</section>
+
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:sayanbhatta2002@gmail.com">sayanbhatta2002@gmail.com</a></p>
@@ -319,6 +276,7 @@ footer {
 
 <footer>
     &copy; 2025 Sayan Bhattacharya. All Rights Reserved.
-</
+</footer>
 
-
+</body>
+</html>
