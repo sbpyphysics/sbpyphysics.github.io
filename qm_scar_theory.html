@@ -43,7 +43,15 @@ footer { text-align:center; padding:1.5rem; background:#001f4d; color:white; mar
     <p>Python, Matplotlib, NumPy</p>
 
     <h3>Results</h3>
-    <p>The project shows how quantum wavefunctions localize along classical unstable orbits, demonstrating scar effects in quantum systems.</p>
+    <p>From the late twentieth century onward, the pioneering work of E.~J.~Heller and others has shaped our understanding of quantum chaos, particularly through the study of quantum billiards. Their investigations revealed that dense families of periodic orbits and associated wave-function structures arise primarily from geometric variations in the underlying classical system. Over the years, it has become clear that, for many classes of potentials, the resulting quantum behavior can change dramatically with even small shifts in initial parameters—an unmistakable signature of the sensitivity to initial conditions that characterizes chaotic dynamics. Consequently, by slightly varying these inputs, one may obtain widely different wave-function patterns even when the overall geometric configuration remains fixed.
+
+Quantum billiard systems are especially powerful test beds for such phenomena. In a simple two-dimensional rectangular box, the energy eigenfunctions are analytically independent of the precise side lengths. By contrast, in non-integrable billiard geometries, the wave functions depend sensitively on boundary shape and aspect ratio. This contrast highlights the deterministic nature of regular geometries versus the inherently non-deterministic, interference-driven behavior of chaotic systems.
+
+In our finite-difference simulations, doubling the grid resolution shifted the characteristic butterfly-like pattern to the 2958th eigenstate, and the structure observed at the 2998th state also changed noticeably. This suggests that the system is extremely sensitive to discretization, a feature consistent with the underlying chaotic dynamics. However, it remains uncertain whether these shifts are intrinsic consequences of chaos—reflecting sensitivity to initial conditions—or artifacts of the numerical scheme itself. A natural next step is to employ higher-order discretizations (e.g., fourth-order finite differences) to examine whether the eigenvalues and wave functions converge more reliably or continue to drift with increasing resolution.
+
+Introducing a small circular cavity into the billiard further amplified these effects: the wave functions changed dramatically, and when the cavity radius became comparable to the billiard width, the amplitude on the opposite side of the cavity nearly vanished. This behavior indicates that the cavity acts as an effectively impenetrable scatterer, partitioning the domain into dynamically isolated subregions. Such sensitivity to boundary topology underscores the intricate interplay between geometry and interference in chaotic billiards.
+
+When the cavity radius was increased to match the full width of the billiard, numerical linear-algebra effects and accuracy limitations occasionally produced wave-function leakage across the cavity—an unphysical artifact. Nevertheless, we identified specific eigenstates for which the wave function did vanish completely on the opposite side, and these states were not only identical in shape but also degenerate in energy. From a physics standpoint, this configuration—complete isolation of wave-function support in a billiard with a full-width internal cavity—appears to introduce a regime that has not been previously explored in the literature, at least for this particular class of billiard geometries. It represents a potentially novel manifestation of geometric partitioning, degeneracy, and confinement in quantum chaotic systems.</p>
 </section>
 
 <footer>
@@ -52,3 +60,4 @@ footer { text-align:center; padding:1.5rem; background:#001f4d; color:white; mar
 
 </body>
 </html>
+
