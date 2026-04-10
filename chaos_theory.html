@@ -30,7 +30,11 @@ footer { text-align:center; padding:1.5rem; background:#001f4d; color:white; mar
 
 <section>
     <h2>Chaos Theory Simulation</h2>
-    <p>This project involves numerical analysis of Lyapunov exponents in chaotic systems, particularly applied to financial markets.</p>
+    <p>This project investigates the presence of chaotic dynamics in financial markets through a nonlinear dynamical systems framework inspired by the Lorenz system. Monthly time-series data from multiple sectoral indices of the National Stock Exchange (NSE), spanning the past five years, is analyzed to explore underlying deterministic structures within seemingly stochastic market behavior.
+
+A data-driven mapping is constructed to embed financial time series into a three-dimensional phase space analogous to the Lorenz system, enabling the study of trajectory evolution and attractor-like structures. Lyapunov exponents are numerically computed to quantify sensitivity to initial conditions and to assess the degree of chaos present in each sector.
+
+Rather than attempting precise point prediction, the study focuses on estimating the predictability horizon and identifying bounded regions of future evolution. Potential abrupt movements and rare events are treated as intrinsic manifestations of nonlinear instability within the reconstructed dynamics, allowing their influence to be reflected in the divergence of trajectories.</p>
 
     <h3>Objectives</h3>
     <ul>
@@ -43,7 +47,7 @@ footer { text-align:center; padding:1.5rem; background:#001f4d; color:white; mar
     <p>Python, NumPy, Matplotlib, Pandas</p>
 
     <h3>Results</h3>
-    <p>Demonstrates how small changes in initial conditions lead to diverging trajectories, illustrating chaos theory.</p>
+    <p>The results demonstrate that financial time series exhibit signatures of low-dimensional chaos over short time scales, while long-term evolution remains fundamentally unpredictable. This work highlights the applicability of chaos theory in financial analysis, providing insights into market stability, risk, and the limits of deterministic forecasting.</p>
 </section>
 
 <footer>
