@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chaos Theory Simulation | Sayan Bhattacharya</title>
+<title>Box Fractal Numerical Simulation | Sayan Bhattacharya</title>
 <style>
 body { font-family: "Times New Roman", Times, serif; background-color: #f0f4f8; color: #000; margin:0; line-height:1.6; }
 h1,h2,h3,h4,h5,h6 { font-family: "Century Gothic", sans-serif; }
@@ -29,25 +29,30 @@ footer { text-align:center; padding:1.5rem; background:#001f4d; color:white; mar
 </header>
 
 <section>
-    <h2>Numerical Analysis of Chaotic Dynamics in NSE Sectoral Indices Using Lorenz-Type Modeling and Lyapunov Exponents</h2>
-    <p>This project investigates the presence of chaotic dynamics in financial markets through a nonlinear dynamical systems framework inspired by the Lorenz system. Monthly time-series data from multiple sectoral indices of the National Stock Exchange (NSE), spanning the past five years, is analyzed to explore underlying deterministic structures within seemingly stochastic market behavior.
+<h2>Anisotropy-Induced Localization in Box Fractal Lattices</h2>
 
-A data-driven mapping is constructed to embed financial time series into a three-dimensional phase space analogous to the Lorenz system, enabling the study of trajectory evolution and attractor-like structures. Lyapunov exponents are numerically computed to quantify sensitivity to initial conditions and to assess the degree of chaos present in each sector.
+<p>
+This project investigates quantum transport in deterministic box fractal lattices with anisotropic hopping parameters using a tight-binding model. By introducing direction-dependent hopping strengths, the study examines how anisotropy influences the localization and propagation of quantum particles in self-similar fractal geometries.
 
-Rather than attempting precise point prediction, the study focuses on estimating the predictability horizon and identifying bounded regions of future evolution. Potential abrupt movements and rare events are treated as intrinsic manifestations of nonlinear instability within the reconstructed dynamics, allowing their influence to be reflected in the divergence of trajectories.</p>
+The Hamiltonian of the box fractal is constructed numerically, and its eigenvalue spectrum and eigenstates are analyzed through exact diagonalization. Wave-packet dynamics are simulated to compute the mean square displacement (MSD), allowing the diffusion exponent to be extracted and used to characterize transport regimes ranging from ballistic and diffusive motion to subdiffusive behavior and localization. The effects of varying anisotropy on transport properties are systematically explored, revealing the transition from extended to localized quantum states.
+</p>
 
-    <h3>Objectives</h3>
-    <ul>
-        <li>Study chaotic dynamics in simple maps.</li>
-        <li>Compute Lyapunov exponents numerically.</li>
-        <li>Apply chaos theory to financial data.</li>
-    </ul>
+<h3>Objectives</h3>
+<ul>
+    <li>Construct deterministic box fractal lattices using an iterative algorithm.</li>
+    <li>Investigate the effect of anisotropic hopping on quantum transport.</li>
+    <li>Compute wave-packet evolution and mean square displacement numerically.</li>
+    <li>Determine diffusion exponents and identify localization transitions.</li>
+</ul>
 
-    <h3>Tools Used</h3>
-    <p>Python, NumPy, Matplotlib, Pandas</p>
+<h3>Tools Used</h3>
+<p>Python, NumPy, SciPy, Matplotlib</p>
 
-    <h3>Results</h3>
-    <p>The results demonstrate that financial time series exhibit signatures of low-dimensional chaos over short time scales, while long-term evolution remains fundamentally unpredictable. This work highlights the applicability of chaos theory in financial analysis, providing insights into market stability, risk, and the limits of deterministic forecasting.</p>
+<h3>Results</h3>
+<p>
+The simulations demonstrate that increasing hopping anisotropy significantly suppresses quantum transport in box fractal lattices. The diffusion exponent decreases from values corresponding to extended transport toward subdiffusive and localized regimes, indicating anisotropy-induced localization. These results provide insight into the interplay between fractal geometry and directional disorder, contributing to the understanding of quantum transport in complex self-similar systems.
+</p>
+
 </section>
 
 <footer>
