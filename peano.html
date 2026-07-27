@@ -29,28 +29,50 @@ footer { text-align:center; padding:1.5rem; background:#001f4d; color:white; mar
     </nav>
 </header>
 
-<section>
-    <h2>Anisotropy induced Flatband and Localization</h2>
-    <p>In this project, we choose a Peano fractal, and by using Tight binding method, we see the DOS, we introduce an anisotropy parameter, and see how the number of flatband varies with this parameter. We also used loss-induced photonics study by the generalized eigenvalue method and at last we studied dynamics of the system</p>
+<h2>Quantum Localization and Transport in Peano Fractal Lattices</h2>
 
-    <h3>Objectives</h3>
-    <ul>
-        <li>Study of DOS by Tight-binding Hamiltonian.</li>
-        <li>Compute IPR and do multi-fractal analysis.</li>
-        <li>Study the variation of loss-induced wave guides and dynamics of the system.</li>
-    </ul>
+<p>
+This project investigates the spectral and transport properties of deterministic
+Peano fractal lattices within the tight-binding framework. The electronic density
+of states (DOS) is first analyzed to understand the influence of the fractal
+geometry and hopping anisotropy on the energy spectrum. Direction-dependent
+hopping amplitudes are introduced through an anisotropy parameter, allowing a
+systematic study of how anisotropy modifies the spectral characteristics of the
+lattice.
 
-    <h3>Tools Used</h3>
-    <p>Python, NumPy, Matplotlib, Scipy, kwant</p>
+To explore localization phenomena, Aubry-André-Harper (AAH) quasiperiodic
+modulation is incorporated into the hopping amplitudes. The interplay between
+the self-similar fractal geometry, hopping anisotropy, and quasiperiodic
+modulation gives rise to a reentrant localization transition, where the system
+alternates between extended and localized transport regimes as the modulation
+strength is varied.
 
-    <h3>Results</h3>
-    <p>Demonstrates how the flat band and localization of electrons can be manipulated with anisotropy parameter.</p>
-</section>
+The localization transition is quantified through quantum dynamical simulations
+by calculating the time evolution of wave packets and their mean square
+displacement (MSD). The diffusion exponent extracted from the MSD provides a
+quantitative measure of the transport regime, enabling a clear characterization
+of extended, subdiffusive, and localized phases.
+</p>
 
-<footer>
-    &copy; 2025 Sayan Bhattacharya. All Rights Reserved.
-</footer>
+<h3>Objectives</h3>
+<ul>
+    <li>Construct a Peano fractal lattice using the tight-binding model.</li>
+    <li>Analyze the density of states (DOS) under varying hopping anisotropy.</li>
+    <li>Introduce Aubry-André-Harper (AAH) hopping modulation.</li>
+    <li>Investigate reentrant localization in quasiperiodic fractal lattices.</li>
+    <li>Characterize quantum transport using mean square displacement (MSD) and diffusion exponents.</li>
+</ul>
 
-</body>
-</html>
+<h3>Tools Used</h3>
+<p>Python, NumPy, SciPy, Matplotlib</p>
 
+<h3>Results</h3>
+<p>
+The study demonstrates that the interplay between fractal geometry, hopping
+anisotropy, and AAH quasiperiodic modulation leads to rich localization
+behavior. Quantum dynamical simulations reveal a reentrant localization
+transition, where the system exhibits multiple transitions between extended and
+localized states. Mean square displacement analysis and the corresponding
+diffusion exponents provide a quantitative understanding of transport in
+quasiperiodic Peano fractal lattices.
+</p>
